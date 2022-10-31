@@ -1,1 +1,1 @@
-console.log("Person Class");
+import('./bootstrap');
