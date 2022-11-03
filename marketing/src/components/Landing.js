@@ -1,37 +1,38 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import MaterialLink from '@material-ui/core/Link';
-import { Link } from 'react-router-dom';
+import React from "react";
 
+import { Link } from "react-router-dom";
+import { makeStyles } from "@mui/styles";
+import {
+  Typography,
+  Button,
+  Container,
+  Grid,
+  Card,
+  CardMedia,
+  CardActions,
+  CardContent,
+} from "@mui/material";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <MaterialLink component={Link} to="/" color="inherit">
+      {"Copyright © "}
+      <Typography component={Link} to="/" color="inherit">
         Your Website
-      </MaterialLink>{' '}
+      </Typography>{" "}
       {new Date().getFullYear()}
-      {'.'}
+      {"."}
     </Typography>
   );
 }
 
 const useStyles = makeStyles((theme) => ({
-  '@global': {
+  "@global": {
     a: {
-      textDecoration: 'none',
+      textDecoration: "none",
     },
   },
   icon: {
-    marginRight: theme.spacing(2),
+    marginRight: 2,
   },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
@@ -45,12 +46,12 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(8),
   },
   card: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
   },
   cardMedia: {
-    paddingTop: '56.25%', // 16:9
+    paddingTop: "56.25%", // 16:9
   },
   cardContent: {
     flexGrow: 1,
